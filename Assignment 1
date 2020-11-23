@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>"Assignment-1 (Hide_Show)"</title>
+	<style>
+		body{
+			padding:50px;
+			margin:10px;
+			text-align:center;
+		}
+		button{
+			padding: 10px;
+			background-color: black;
+			color: white; 
+		}
+	</style>
+</head>
+<body>
+<img id="image" src="https://saas.crisptag.com/wp-content/uploads/2020/08/cropped-crisptag_logo_rectangle-2.png"><br><br>
+<div>
+	<button onclick="myFunction()" id="btn">HIDE</button>
+</div>
+
+	<script>
+		var a;
+		function myFunction() 
+		{
+		if(a==1)
+		{
+			document.getElementById("image").style.display="inline";
+			document.getElementById("btn").innerHTML = "Hide";
+			return a=0;
+		}
+		else
+		{
+			document.getElementById("image").style.display="none";
+			document.getElementById("btn").innerHTML = "Display";
+			return a=1;
+		}
+	}
+	</script>
+</body>
+</html>
